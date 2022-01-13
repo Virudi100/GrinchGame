@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
 
 
 
-    private float timer = 60f;
+    private float timer = 30f;
 
     private void Awake()
     {
@@ -154,7 +154,7 @@ public class LevelManager : MonoBehaviour
 
     private void Traveling()        //Lance le traveling de camera au debut
     {
-        if (MainCamera.orthographicSize > 5.55f)
+        if (MainCamera.orthographicSize > 9.44f)
         {
             MainCamera.orthographicSize -=  Time.deltaTime * speedTraveling ;
         }
@@ -260,7 +260,7 @@ public class LevelManager : MonoBehaviour
         Destroy(newGift);
         gravityValue = 0;
         maxGift = 0;
-        timer = 60;
+        timer = 30;
 
         if(movementIndex == 1)
         {
